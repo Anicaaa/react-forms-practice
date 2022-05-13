@@ -23,7 +23,7 @@ export default function App() {
     if (name === "address" && type === "text") {
       setUserData({ ...userData, address: value });
     }
-    if (name === "phone" && type === "telephone") {
+    if (name === "phone" && type === "tel") {
       setUserData({ ...userData, phoneNumber: value });
     }
     if (name === "email" && type === "email") {
@@ -72,7 +72,7 @@ export default function App() {
           <label>
             Phone Number
             <input
-              type="telephone"
+              type="tel"
               name="phone"
               onChange={handleChange}
               value={userData.phoneNumber}
